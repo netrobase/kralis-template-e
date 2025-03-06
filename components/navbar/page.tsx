@@ -10,7 +10,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="container mx-auto px-4 xl:px-0">
+    <div className="container mx-auto px-4 2xl:px-0">
       <div className='p-4 flex justify-between items-center border-b-2 border-gray-950'>
         <div className="text-2xl font-bold font-serif hover:text-[#FF4343] hover:animate-pulse" ><Link href="/">EduWave</Link></div>
         <HiMenuAlt3 size={30} className='cursor-pointer lg:hidden' onClick={() => setShow(prev => !prev)} />
