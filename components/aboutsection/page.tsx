@@ -13,11 +13,11 @@ const AboutSection = () => {
           <article className='h-full flex flex-col justify-center items-start'>
             <h2 className={`${poppins.className} title-section`}>About Us</h2>
             <p>Kralis is a revolutionary School Result Management System (SRMS) that streamlines administrative tasks, enhances student engagement, and fosters academic success.</p>
-            <ul className='list-about-us nt-4'>
-              <li><strong>Here are some of the limitations Kralis aims to overcome -</strong></li>
-              <li>Limited customization options for report formats and templates.</li>
-              <li>Initial setup and implementation may require technical expertise.</li>
-              <li>Lack of real-time updates and notifications for students, parents, and teachers.</li>
+            <ul className='list-about-us mt-4'>
+              <li className='text-gray-200'><strong>Here are some of the limitations Kralis aims to overcome -</strong></li>
+              <li className='text-[#6B6B6B]'>Limited customization options for report formats and templates.</li>
+              <li className='text-[#6B6B6B]'>Initial setup and implementation may require technical expertise.</li>
+              <li className='text-[#6B6B6B]'>Lack of real-time updates and notifications for students, parents, and teachers.</li>
             </ul>
           </article>
         </div>

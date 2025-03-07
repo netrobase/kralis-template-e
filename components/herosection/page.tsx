@@ -1,22 +1,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Poppins, Passion_One, Inter } from "next/font/google";
+
+const fontpoppins = Poppins({ subsets: ['latin'], weight: "400" });
+const fontPassionOne = Passion_One({ subsets: ['latin'], weight: "400" });
+const fontInter = Inter({ subsets: ['latin'], weight: "700" });
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between lg:h-screen bg-black p-8">
-      <div className="md:w-1/2 space-y-4 text-center md:text-left " >
-        <h1 className="text-red-800 md:text-[58px] text-[30px] font-bold tracking-[0.2px]">
-          HIGH QUALITY EDUCATION
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between lg:h-screen h-screen bg-black p-8">
+      <div className="md:w-1/2 space-y-4 text-center md:text-left ">
+        <h1 className={`bg-gradient-to-r from-[#C10505] to-[#045EE1] max-w-max rounded-md py-2 px-[30px] text-[20px] tracking-[0.2px] ${fontpoppins.className} mt-2 mx-auto md:mx-0`}>
+          WELCOME TO EDUWAVE
         </h1>
-        <p className="text-gray-500 text-lg font-normal leading-[30px] tracking-[0.2px] ">
-          Providing excellence in education to inspire success and a brighter future.
+        <p className={`text-[30px] md:text-[45px] leading-[50px] tracking-[0.2px] ${fontPassionOne.className}`}>
+          Empowering seamless learning and smart education management.
         </p>
-        <div className="space-x-4 py-5">
-          <Link href="https://www.kralis.app/" className="bg-red-500 text-white  rounded-md hover:bg-red-600 px-[40px] py-[15px]">
+        <div className="py-0 md:py-4">
+          <Link href="https://www.kralis.app/" className={`px-[20px] py-[11px] bg-[#045EE1] rounded-md ${fontInter.className}`}>
             School Portal
-          </Link>
-          <Link href="/" className="border border-red-500 text-red-500 rounded-md hover:bg-red-500 hover:text-white px-[25px] py-[15px]">
-            About Us
           </Link>
         </div>
       </div>
