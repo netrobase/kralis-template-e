@@ -18,3 +18,7 @@ p:last-of-type {
   @apply mb-0;
 }
 
+.socials li {
+  @apply w-[24px] h-[24px] rounded-md bg-white hover:bg-[#045EE1] duration-300 flex justify-center items-center;
+}
+
